@@ -1,0 +1,5 @@
+ggeetika0911_db_user
+xQOxzjBaJywQXAr5
+mongodb+srv://<db_username>:<db_password>@notebook.1biqbih.mongodb.net/?appName=Notebook
+MONGO_URI=mongodb+srv://ggeetika0911_db_user:xQOxzjBaJywQXAr5@notebook.1biqbih.mongodb.net/notebookDB?retryWrites=true&w=majority&appName=Notebook
+mongodb+srv://ggeetika0911_db_user:xQOxzjBaJywQXAr5@notebook.1biqbih.mongodb.net/?appName=Notebook
