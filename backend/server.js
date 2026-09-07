@@ -1,6 +1,6 @@
 const express = require("express")
 const mongoose = require("mongoose")
-const cors = require("cors")
+//const cors = require("cors")
 require("dotenv").config()
 const fileRoutes = require("./routes/fileRoutes")
 const authRoutes = require("./routes/authRoutes")
@@ -8,7 +8,12 @@ const authRoutes = require("./routes/authRoutes")
 const app = express()
 
 // middleware
-app.use(cors())
+const cors = require("cors");
+
+app.use(cors({
+  origin: "https://vault-note-seven.vercel.app",
+  credentials: true
+}));
 app.use(express.json())
 app.use("/api/files",fileRoutes)
 
