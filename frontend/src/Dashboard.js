@@ -28,7 +28,7 @@ function Dashboard() {
     try {
 
       const res = await axios.get(
-        "http://localhost:5000/api/files",
+        `${process.env.REACT_APP_API_URL}/api/files`,
         {
           headers: {
             Authorization: `Bearer ${token}`
@@ -70,7 +70,7 @@ function Dashboard() {
     try {
 
       await axios.post(
-        "http://localhost:5000/api/files/upload",
+        `${process.env.REACT_APP_API_URL}/api/files/upload`,
         formData,
         {
           headers: {
@@ -101,7 +101,7 @@ function Dashboard() {
     try{
 
       await axios.delete(
-        `http://localhost:5000/api/files/${id}`,
+        `${process.env.REACT_APP_API_URL}/api/files/${id}`,
         {
           headers:{
             Authorization:`Bearer ${token}`
